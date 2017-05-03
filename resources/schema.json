@@ -1,0 +1,38 @@
+{
+    "title": "Season schema",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "seasons": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "no": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "description": "Number of the season"
+                    },
+                    "title": {
+                        "type": "string",
+                        "description": "Title of the season"
+                    },
+                    "from": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "description": "Starting episode of the season"
+                    },
+                    "to": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "description": "Ending episode of the season"
+                    }
+                },
+                "required": ["no", "title", "from", "to"],
+                "description": "A season description"
+            }
+        }
+    },
+    "required": ["seasons"]
+}

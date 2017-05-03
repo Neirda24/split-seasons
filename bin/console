@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+// application.php
+
+require __DIR__.'/../vendor/autoload.php';
+
+use Command\RenameKeepSeqCommand;
+use Command\RenameRemoveSeqCommand;
+use Command\SplitCommand;
+use Symfony\Component\Console\Application;
+
+define('APP_ROOT_DIR', dirname(__DIR__));
+
+$application = new Application();
+
+$application->add(new SplitCommand());
+$application->add(new RenameKeepSeqCommand());
+$application->add(new RenameRemoveSeqCommand());
+
+$application->run();

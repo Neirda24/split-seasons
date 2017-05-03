@@ -1,0 +1,16 @@
+{
+    "seasons": [
+        {
+            "title": "First Chapter",
+            "from": 1,
+            "to": 62,
+            "no": 1
+        },
+        {
+            "title": "Second Chapter",
+            "from": 63,
+            "to": 135,
+            "no": 2
+        }
+    ]
+}

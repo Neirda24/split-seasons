@@ -1,0 +1,25 @@
+{
+    "name": "neirda24/split-season",
+    "description": "Split episodes in season (for plex)",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrien Schaegis",
+            "email": "rochesadrien@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/console": "~3",
+        "symfony/filesystem": "~3",
+        "justinrainbow/json-schema": "^3.0",
+        "neirda24/tools-bundle": "^2.2",
+        "symfony/finder": "^3.1"
+    }
+}
